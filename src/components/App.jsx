@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import './app.less'
-import {useDispatch, useSelector} from "react-redux";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Main from "./main/Main";
+import { useDispatch, useSelector } from 'react-redux'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './main/Main'
 
 const App = () => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    return (
+  return (
         <div className='container'>
             <BrowserRouter>
                <Routes>
@@ -16,7 +16,7 @@ const App = () => {
             </BrowserRouter>
            </div>
 
-    );
-};
+  )
+}
 
-export default App;
+export default App
