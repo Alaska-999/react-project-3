@@ -13,7 +13,8 @@ module.exports = {
   // путь к тому куда вебпак будет собирать файлы
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].[hash].js',
+    publicPath: "/"
   },
   // порт на котором будет запускатся сервер
   devServer: {
