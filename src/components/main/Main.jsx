@@ -32,12 +32,17 @@ const Main = () => {
         dispatch(getRepos(searchValue, currentPage, perPage))
     }
 
-    if(isFetchError) {
-        nav(`/error`)
-    }
+    // if(isFetchError) {
+    //     nav(`/error`)
+    // }
 
     return (
         <div>
+            {isFetchError &&
+                <div className="alert alert-danger" role="alert">
+                    Error occurred! Please reload this page.
+                </div>
+            }
             <div className='search'>
                 <input value={searchValue}
                        onChange={(e) => setSearchValue(e.target.value)} type="text" className='search-input'/>
